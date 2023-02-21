@@ -22,6 +22,10 @@ window.addEventListener('message', function(event) {
     $(".speedometer").html(('000' + Math.round(eFunc.speed)).substr(-3));
     $(".fuelmeter").html(Number(eFunc.fuelLevel));
     $(".damagemeter").html(Number(eFunc.damagelevel));
+    $(".streetname").html(eFunc.laststreet);
+    $(".compasstext").html('  | ' + eFunc.degree + '  |');
+
+
     if (eFunc.gearlevel <= 0  ) {
         $(".gear").html('R');
 
@@ -30,13 +34,12 @@ window.addEventListener('message', function(event) {
         $(".gear").html(Number(eFunc.gearlevel));
     }
 
+    $(".Container").fadeIn();
 
-
-        $(".Container").css({"display":"block"});
+        // $(".Container").css({"display":"block"});
         $('body').show()
     } else if (event.data.action == "hide") {
-        $(".Container").css({"display":"none"});
-        $('body').hide()
+        $(".Container").fadeOut();
 
     } 
 

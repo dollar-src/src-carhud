@@ -19,6 +19,15 @@
 
 }   
 
+@font-face {
+    font-family: gilroybold;
+    src: url(/html/fontawesome/Gilroy-Extrabold.ttf);
+  }
+  @font-face {
+    font-family: joyride;
+    src: url(/html/fontawesome/joyrid.ttf);
+  }
+
 
 .carhudcontainer {
     position: absolute;
@@ -128,4 +137,40 @@ height: 0px;
 bottom:-20px;
 border: 3px solid #FFFFFF;
 box-shadow: 0px 4px 20px #FFFFFF;
+}   
+
+.compasscontainer {
+    position: absolute;
+    width: 500px;
+    height: 100;
+
+    bottom: 20px;
+    left: 320px;
+}
+
+.streetname {
+    width: auto;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    left: 80px;
+    bottom: 0px;
+    text-align: left;
+    font-family: akrobatbold;
+}
+.compass {
+    position: absolute;
+    width: 48px;
+  height: 48px;
+  bottom: 0px;
+  background: #d9d9d941;
+}
+.compasstext {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: akrobatbold;
+    bottom: 3px;
+    left: 5px;
 }

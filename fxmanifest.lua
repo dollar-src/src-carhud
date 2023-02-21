@@ -19,6 +19,7 @@ files {
 	'html/js/*.js',
 	'html/index.html',
 	"html/css/*.ttf",
+	"html/fontawesome/*.ttf",
 	"html/fontawesome/css/*.css",
 	'html/img/index.html',
     'html/img/*.png'}
