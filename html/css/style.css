@@ -1,0 +1,131 @@
+
+
+@font-face {
+    font-family: 'akrobatbold';
+    src: url('akrobat-bold-webfont.woff2') format('woff2'),
+         url('akrobat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'akrobatextralight';
+    src: url('akrobat-extralight-webfont.woff2') format('woff2'),
+         url('akrobat-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}   
+
+
+.carhudcontainer {
+    position: absolute;
+    width: 400;
+    height: 200;
+    /* border:1px solid red; */
+    bottom: 50px;
+    right: 0px;
+}
+  body{
+    overflow:hidden;
+    background:none;
+    }
+
+.Container {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+.speedometer {
+    position:absolute;
+    left:35px;
+    bottom:-40px;
+    background: linear-gradient(255.98deg, #FFFFFF -44.98%, #FFFFFF 123.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: akrobatbold;
+    font-size: 130px;
+}
+
+.fuelmeter {
+    position:absolute;
+    color: white;
+    font-size:35px;
+    font-family: akrobatbold;
+   right:65px;
+    top:65px;
+
+}
+.fuelicon {
+    color:white;
+    position:absolute;
+    right:15px;
+    font-size:25px;
+    top:73px;
+}
+
+
+.kmhtext {
+
+    position:absolute;
+    color: white;
+    font-family: akrobatbold;
+    font-size:40px;
+    left:230px;
+    bottom:-10
+}
+.batteryicon {
+    color:white;
+    position:absolute;
+    right:15px;
+    font-size:25px;
+    top:130px;
+}
+
+.damagemeter {
+    position:absolute;
+    color: white;
+    font-size:35px;
+    font-family: akrobatbold;
+    right:65px;
+    top:120px
+
+}
+
+.geartext {
+position:absolute;
+color:white;
+font-family: akrobatbold;
+font-size:40;
+top:60px;
+left:45px;
+}
+
+.gear {
+position:absolute;
+color:white;
+font-family: akrobatbold;
+font-size:40px;
+top: 60px;
+left:130px
+}
+
+.line {
+    position: absolute;
+width: 350px;
+height: 0px;
+    left:30px;
+bottom:-20px;
+border: 3px solid #FFFFFF;
+box-shadow: 0px 4px 20px #FFFFFF;
+}
