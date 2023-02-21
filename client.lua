@@ -76,4 +76,3 @@ RegisterCommand('hudfps', function ()
         fps = true
     end
 end)
-print('test')
