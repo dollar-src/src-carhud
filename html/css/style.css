@@ -57,11 +57,7 @@
     position:absolute;
     left:35px;
     bottom:-40px;
-    background: linear-gradient(255.98deg, #FFFFFF -44.98%, #FFFFFF 123.2%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: white;
     font-family: akrobatbold;
     font-size: 130px;
 }
