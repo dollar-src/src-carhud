@@ -1,72 +1,172 @@
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://www.dafontfree.net/embed/YWtyb2JhdC1ib2xkJmRhdGEvODQvYS8xNjU1OTgvQWtyb2JhdC1Cb2xkLm90Zg" rel="stylesheet" type="text/css"/>
-    <link href="https://www.dafontfree.net/embed/YWtyb2JhdC1leHRyYWxpZ2h0JmRhdGEvODQvYS8xNjU2MDAvQWtyb2JhdC1FeHRyYUxpZ2h0Lm90Zg" rel="stylesheet" type="text/css"/>
-    <script src="https://kit.fontawesome.com/16546c175c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
-<body>
+
+@font-face {
+    font-family: 'akrobatbold';
+    src: url('akrobat-bold-webfont.woff2') format('woff2'),
+         url('akrobat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'akrobatextralight';
+    src: url('akrobat-extralight-webfont.woff2') format('woff2'),
+         url('akrobat-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}   
+
+@font-face {
+    font-family: gilroybold;
+    src: url(/html/fontawesome/Gilroy-Extrabold.ttf);
+  }
+  @font-face {
+    font-family: joyride;
+    src: url(/html/fontawesome/joyrid.ttf);
+  }
+
+
+.carhudcontainer {
+    position: absolute;
+    width: 400;
+    height: 200;
+    /* border:1px solid red; */
+    bottom: 50px;
+    right: 0px;
+}
+  body{
+    overflow:hidden;
+    background:none;
+    }
+
+.Container {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+}
 
 
 
-                    <div class="Container">
-                        <div class="carhudcontainer">
-                        <div id="speedometer" class="speedometer">100</div>
-                        <div id="fuelmeter" class="fuelmeter">100</div>
-                        <div id="damagemeter" class="damagemeter">0</div>
-                        <div id="gear" class="gear">0</div>
-                        <div id="geartext" class="geartext">GEAR</div>
-                        <i class="fuelicon fa-solid fa-gas-pump"></i>
-                        <i class="batteryicon fa-solid fa-oil-can"></i>
-                        <div id="kmhtext" class="kmhtext">km/h</div>
-                        <div class="line"></div>
-                        
-                        </div>
-                        <div class="compasscontainer">
-                            <div class="compasstext">NW</div>
+.speedometer {
+    position:absolute;
+    left:35px;
+    bottom:-40px;
+    color: white;
+    font-family: akrobatbold;
+    font-size: 130px;
+}
 
-                            <div id="streetname" class="streetname">COOL STREET NAME</div>
-                        </div>
-                    </div>
+.fuelmeter {
+    position:absolute;
+    color: white;
+    font-size:35px;
+    font-family: akrobatbold;
+   right:65px;
+    top:65px;
 
-                            
-    
-
-
-<body>
-
-
+}
+.fuelicon {
+    color:white;
+    position:absolute;
+    right:15px;
+    font-size:25px;
+    top:73px;
+}
 
 
+.kmhtext {
 
+    position:absolute;
+    color: white;
+    font-family: akrobatbold;
+    font-size:40px;
+    left:230px;
+    bottom:-10
+}
+.batteryicon {
+    color:white;
+    position:absolute;
+    right:15px;
+    font-size:25px;
+    top:130px;
+}
 
+.damagemeter {
+    position:absolute;
+    color: white;
+    font-size:35px;
+    font-family: akrobatbold;
+    right:65px;
+    top:120px
 
+}
 
+.geartext {
+position:absolute;
+color:white;
+font-family: akrobatbold;
+font-size:40;
+top:60px;
+left:45px;
+}
 
+.gear {
+position:absolute;
+color:white;
+font-family: akrobatbold;
+font-size:40px;
+top: 60px;
+left:130px
+}
 
+.line {
+    position: absolute;
+width: 350px;
+height: 0px;
+    left:30px;
+bottom:-20px;
+border: 3px solid #FFFFFF;
+box-shadow: 0px 4px 20px #FFFFFF;
+}   
 
+.compasscontainer {
+    position: absolute;
+    width: 500px;
+    height: 100;
 
+    bottom: 20px;
+    left: 320px;
+}
 
-
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
-    <script type="text/javascript"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/app.js" type="text/javascript"></script>
-    <script src="js/debounce.min.js" type="text/javascript"></script>
-
-
-
-
-
-
-
-
-
-
-</body>
+.streetname {
+    width: auto;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    left: 80px;
+    bottom: 0px;
+    text-align: left;
+    font-family: akrobatbold;
+}
+.compass {
+    position: absolute;
+    width: 48px;
+  height: 48px;
+  bottom: 0px;
+  background: #d9d9d941;
+}
+.compasstext {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: akrobatbold;
+    bottom: 3px;
+    left: 5px;
+}
